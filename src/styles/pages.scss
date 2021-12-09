@@ -1,0 +1,22 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.game-touch-start,
+.new-game{
+  min-height:100vh;
+  @include flex();
+  position: relative;
+}
+.new-game{
+  .board-wrap{
+    padding: 20px;
+    @include flex();
+    border: 3px solid #000000;
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+}
+

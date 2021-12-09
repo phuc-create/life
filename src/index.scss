@@ -1,0 +1,20 @@
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  height: 100%;
+ 
+}
+body{
+  position: relative;
+  background-color: var(--white);
+  font-family: 'Poppins',sans-serif;
+}
+
+@import "./styles/fonts";
+@import "./styles/colors";
+@import "./styles/button";
+@import "./styles/components";
+@import "./styles/pages.scss"
